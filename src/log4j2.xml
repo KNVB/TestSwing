@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+</Configuration>
+<!-- Configuration status="warn" packages="ui">
+    <Appenders>
+        <MyCustomAppender name="myapp" >
+       <PatternLayout pattern="serial no: %sn |  Date: %d |  level:%level | class name:%logger | method name:%M() |  line number:%L |  Location: %l | message:%m%n" />
+        </MyCustomAppender>
+    </Appenders>
+       <Loggers>
+              <Root level="all" additivity="false">
+                     <AppenderRef ref="myapp" />
+              </Root>
+       </Loggers>
+</Configuration -->
