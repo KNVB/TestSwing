@@ -67,10 +67,6 @@ public class MyCustomImpl extends AbstractAppender {
 	public void append(LogEvent event) {
 		readLock.lock();
 		try {
-			final byte[] bytes = getLayout().toByteArray(event);
-			// here I am printing logs into console
-			// System.out.print("LOG: " +new String(bytes, "UTF-8"));
-			// System.out.print("LOG: "+event.getMessage().getFormattedMessage()+"\n");
 			Calendar now = new GregorianCalendar();
 			SimpleDateFormat fmt = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 			fmt.setCalendar(now);

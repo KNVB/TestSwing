@@ -6,15 +6,10 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.GridLayout;
 
-import javax.swing.GroupLayout;
-import javax.swing.JButton;
-import javax.swing.JEditorPane;
 import javax.swing.JLabel;
 import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
 import javax.swing.JTextField;
-import javax.swing.ScrollPaneConstants;
-import javax.swing.SpringLayout;
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.DefaultMutableTreeNode;
@@ -82,6 +77,7 @@ public class TreePanel extends JPanel implements TreeSelectionListener
                  tree.getLastSelectedPathComponent();
 		if (node == null) return;
 
+		@SuppressWarnings("unused")
 		Object nodeInfo = node.getUserObject();
 		if (node.isLeaf()) 
 		{
@@ -96,8 +92,10 @@ public class TreePanel extends JPanel implements TreeSelectionListener
 		    int h = ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED ;*/
 			
 			JPanel jp = new JPanel( ) ;
+			@SuppressWarnings("unused")
 			JLabel label = new JLabel("Find What:");;
-		    JTextField textField = new JTextField();
+		    @SuppressWarnings("unused")
+			JTextField textField = new JTextField();
 	        
 		    detailView.setViewportView(jp);
 			

@@ -45,6 +45,7 @@ import javax.swing.border.Border;
 import javax.swing.JTabbedPane;
 import javax.swing.JPanel;
 import javax.swing.JFrame;
+
 import java.beans.*; //Property change stuff
 import java.awt.*;
 import java.awt.event.*;
@@ -55,7 +56,11 @@ import java.awt.event.*;
  *   images/middle.gif
  */
 public class DialogDemo extends JPanel {
-    JLabel label;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	JLabel label;
     ImageIcon icon = createImageIcon("images/middle.gif");
     JFrame frame;
     String simpleDialogDesc = "Some simple message dialogs";
@@ -546,8 +551,9 @@ public class DialogDemo extends JPanel {
                         + "You can have one or more of these up<br>"
                         + "and still use the main window.");
                     label.setHorizontalAlignment(JLabel.CENTER);
-                    Font font = label.getFont();
-                    label.setFont(label.getFont().deriveFont(font.PLAIN,
+                    @SuppressWarnings("unused")
+					Font font = label.getFont();
+                    label.setFont(label.getFont().deriveFont(Font.PLAIN,
                                                              14.0f));
  
                     JButton closeButton = new JButton("Close");

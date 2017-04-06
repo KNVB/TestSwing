@@ -7,7 +7,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.GregorianCalendar;
 
 import javax.swing.Timer;
@@ -23,6 +22,10 @@ import javax.swing.text.StyleContext;
 
 public class MyTimer extends JFrame implements ActionListener 
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 8156944062939925382L;
 	private JPanel topPanel;
 	private JTextPane tPane = new JTextPane();
 	public MyTimer()

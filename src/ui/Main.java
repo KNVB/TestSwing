@@ -3,6 +3,7 @@ package ui;
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
 import java.awt.Label;
+
 import javax.swing.JDialog;
 import javax.swing.JPanel;
 import javax.swing.JSlider;
@@ -40,6 +41,7 @@ public class Main {
 	}
 
 	public static void main(String args[]) {
+		@SuppressWarnings("unused")
 		Main colourDialog = new Main();
 	}
 }

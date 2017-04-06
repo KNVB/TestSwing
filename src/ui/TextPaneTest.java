@@ -1,18 +1,17 @@
 package ui;
 import java.awt.*;
-
-import java.awt.event.*;
-
 import javax.swing.*;
-
 import javax.swing.border.*;
-
 import javax.swing.text.AttributeSet;
 import javax.swing.text.SimpleAttributeSet;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyleContext;
 public class TextPaneTest extends JFrame
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4662984431947115881L;
 	private JPanel topPanel;
     private JTextPane tPane;
 

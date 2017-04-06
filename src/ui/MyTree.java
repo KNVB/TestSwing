@@ -1,7 +1,6 @@
 package ui;
 
 import java.awt.BorderLayout;
-import java.awt.Color;
 import java.awt.event.KeyEvent;
 
 import javax.swing.JFrame;
@@ -9,7 +8,7 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JToolBar;
 import javax.swing.UIManager;
-import javax.swing.border.EtchedBorder;
+
 
 public class MyTree 
 {

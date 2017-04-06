@@ -31,12 +31,16 @@ package ui;
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */ 
 
-import java.awt.Component;
 import javax.swing.*;
 import static javax.swing.GroupLayout.Alignment.*;
 
 public class Find extends JFrame {
-    public Find() {
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public Find() {
         JLabel label = new JLabel("Find What:");;
         JTextField textField = new JTextField();
         JCheckBox caseCheckBox = new JCheckBox("Match Case");

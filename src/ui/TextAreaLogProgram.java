@@ -16,6 +16,11 @@ import javax.swing.text.BadLocationException;
 public class TextAreaLogProgram extends JFrame 
 {
 	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7416147674680241939L;
+
+	/**
      * The text area which is used for displaying logging information.
      */
     private JTextArea textArea;

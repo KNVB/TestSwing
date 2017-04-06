@@ -3,9 +3,10 @@ import java.awt.Font;
 import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+
+
 
 
 import javax.swing.Timer;
@@ -57,6 +58,7 @@ public class Log4jTest implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) 
 	{
+		@SuppressWarnings("unused")
 		Calendar now=new GregorianCalendar ();
 		/*SimpleDateFormat fmt = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 		fmt.setCalendar(now);
@@ -86,7 +88,8 @@ public class Log4jTest implements ActionListener {
         {
             public void run()
             {
-            	Log4jTest log4jTest=new Log4jTest();
+            	@SuppressWarnings("unused")
+				Log4jTest log4jTest=new Log4jTest();
             }
         });
 	}

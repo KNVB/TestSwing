@@ -3,7 +3,6 @@ package ui;
 import static javax.swing.GroupLayout.Alignment.*;
 
 import javax.swing.GroupLayout;
-import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
@@ -12,11 +11,14 @@ import javax.swing.WindowConstants;
 
 public class MyFind extends JFrame{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7566141484314269588L;
 	public MyFind() 
 	{
         JLabel label = new JLabel("Find What:");
         JTextField textField = new JTextField();
-        JButton findButton = new JButton("Find");
         
         GroupLayout layout = new GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
